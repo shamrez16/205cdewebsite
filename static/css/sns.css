@@ -1,0 +1,14 @@
+.about {
+    left:400px;
+    top:100px;
+}
+
+/*maps*/
+.maps{
+    position: relative;
+    left: 500px;
+    border: 3px solid #73AD21;
+}
+.h2{
+    color:#73ad21;
+}

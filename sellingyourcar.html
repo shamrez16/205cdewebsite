@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+<title>SNS MOTORS</title>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+ 
+    
+<style>
+ .carousel-inner > .item > img,
+ .carousel-inner > .item > a > img {
+   width: 70%;
+   margin: auto;
+ }
+</style>
+    
+</head> 
+<body>
+        
+<!-- Navbar -->
+<nav class="navbar navbar-inverse navbar-fixed-top" id="my-navbar">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data target="#navbar-collapse">
+                <span class="icon bar"></span>
+                <span class="icon bar"></span>
+                <span class="icon bar"></span>
+                <span class="icon bar"></span>
+                </button>
+                       <a class="navbar-brand" href="homepage.html">SNS Motors</a>
+                
+</div> <!-- Navbar header-->
+<div class="collapse navbar-collapse" id="navbar-collapse">
+    <ul class="nav navbar-nav">
+        <li><a href="homepage.html">Home</a> 
+        <li><a href="currentinventory.html">Current Inventory</a>
+        <li><a href="previouslysold.html"> Previously Sold</a>
+        <li><a href="sellingyourcar.html"> Selling Your Car</a>    
+          <li><a href="testimonial.html">Testimonial</a>    
+        <li><a href="aboutus.html">About us</a>
+        <li><a href="contactus.html">Contact us</a>
+    </ul>
+     <ul class="nav navbar-nav navbar-right">
+        <li><a id="timer"></a></li>
+      </ul>
+
+        </div>
+</div><!-- end container-->
+</nav><!-- end navbar -->
+        
+
+ <!-- jumbotron-->
+        
+        <div class="jumbotron">
+            <div class="container text-center">
+                <h1>SNS Motors</h1>
+                <p> THE ULTIMATE NAME IN DEALING WITH LUXURY & PERFORMANCE CARS</p>
+           
+            </div><!-- end container-->
+        </div><!-- end jumbotron-->
+        
+        <form class="form-horizontal" action="submit.html" method="post" ><fieldset> 
+         <center>Fields marked with an asterisk (*) must be provided.</center>
+           <center>Your Details.</center>
+           
+           <!-- Customer Name--> 
+         <div class="form-group"> 
+         <label class="col-md-4 control-label" for="name">Name*</label>    
+         <div class="col-md-4"> 
+         <input id='name' name="name" type="text" placeholder="Full name " class="form-control input-md">
+         </div> 
+          </div>
+
+          <!-- Pre-Fix --> 
+           <div class="form-group"> 
+           <label class="col-md-4 control-label" for="title">Title*</label> 
+                <div class="col-md-4">
+                <select id="Title" name="title" class="form-control"> 
+                <option value="MR">Mr</option> 
+                <option value="MRS">Mrs</option>
+                <option value="MS">Miss</option>
+                 <option value="MS">Ms</option>
+                  <option value="MS">Other</option>
+                </select>
+               </div>
+            </div> 
+         <!-- Organisation details -->
+          <div class="form-group"> 
+         <label class="col-md-4 control-label" for="organisation">Organisation*</label>    
+         <div class="col-md-4"> 
+         <input id='organisation' name="organisation" type="text" placeholder="Organisation" class="form-control input-md">
+         </div> 
+          </div>
+          <!-- Phone-->
+          <div class="form-group"> 
+          <label class="col-md-4 control-label" for="phone">Phone*</label>     
+          <div class="col-md-4"> 
+          <input id="phone" name="phone" type="text" placeholder="number" class="form-control input-md">
+          </div>
+           </div>
+            <!-- Email-->
+          <div class="form-group"> 
+          <label class="col-md-4 control-label" for="email">Email*</label>     
+          <div class="col-md-4"> 
+          <input id="email" name="email" type="text" placeholder="email" class="form-control input-md">
+          </div>
+           </div>
+                     <center> Enter Car Details</center>
+            <!-- Manufacturer-->
+          <div class="form-group"> 
+          <label class="col-md-4 control-label" for="make">Manufacturer*</label>     
+          <div class="col-md-4"> 
+          <input id="carmake" name="make" type="text" placeholder="Vehicle Make " class="form-control input-md">
+          </div>
+           </div>
+            <!-- Model-->
+          <div class="form-group"> 
+          <label class="col-md-4 control-label" for="carmodel">Model*</label>     
+          <div class="col-md-4"> 
+          <input id="carmodel" name="carmodel" type="text" placeholder="Vehicle model " class="form-control input-md">
+          </div>
+           </div>
+            <!-- Mileage-->
+          <div class="form-group"> 
+          <label class="col-md-4 control-label" for="carmileage">Mileage*</label>     
+          <div class="col-md-4"> 
+          <input id="carmileage" name="carmileage" type="text" placeholder="mileage " class="form-control input-md">
+          </div>
+           </div>
+           
+           <!-- REGISTRATION-->
+          <div class="form-group"> 
+          <label class="col-md-4 control-label" for="carreg">Registration*</label>     
+          <div class="col-md-4"> 
+          <input id="carreg" name="carreg" type="text" placeholder="Vehicle Registration " class="form-control input-md">
+          </div>
+           </div>
+           
+           <!-- REGISTRATION DATE--> 
+           <div class="form-group"> 
+           <label class="col-md-4 control-label" for="date">Vehicle First Registration*</label>   
+           <div class="col-md-4"> <input id="date" name="date" type="date" placeholder="Pick a Date" 
+           class="form-control input-md"> 
+           </div> 
+          </div> 
+          <!--Comments -->
+          <div class="container text-center">
+          <textarea rows="4" cols="65" name="comment">
+    Additional Details...</textarea>
+          <!-- Button --> 
+          <div class="form-group">
+          <div class="col-md-12">
+               <button id="submitbtn" name="submitbtn" class="btn btn-default form-control">Submit</button> 
+          </div> 
+        </div> 
+        </fieldset> 
+        </form> 
+
+            
+            
+    
+    
+    
+    
+    
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+
+
+    <script>
+      // $('#navbar-collapse').append('<div id="timer" class="nav navbar navbar-right"></div>');
+      
+      
+      function updateTimer(){
+       
+        var d = new Date();
+        var n = d.toUTCString();
+
+        $('#timer').text(n);
+        setTimeout(updateTimer, 100);
+      }
+      
+      updateTimer();
+    
+    </script>
+    </body>
+</html>
